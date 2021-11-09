@@ -44,3 +44,68 @@ while (num >= 1) {
 
 // Countdown, liftoff!
 
+var secs = 60;
+
+while (secs >= 0) {
+  if (secs === 50) {
+    console.log("Orbiter transfers from ground to internal power");
+  } else if (secs === 31) {
+    console.log("Ground launch sequencer is go for auto sequence start");
+  } else if (secs === 16) {
+    console.log("Activate launch pad sound suppression system");
+  } else if (secs === 10) {
+    console.log("Activate main engine hydrogen burnoff system");
+  } else if (secs === 6) {
+    console.log("Main engine start");
+  } else if (secs === 0) {
+    console.log("Solid rocket booster ignition and liftoff!");
+  } else {
+    console.log(`T-${secs} seconds`);
+  }
+  secs--;
+}
+
+// Rewrite while loop as for loop
+
+var x = 9;
+while (x >= 1) {
+  console.log("hello " + x);
+  x = x - 1;
+}
+
+for (var x = 9; x >= 1; x -= 1) {
+  console.log('hello ' + x);
+}
+
+// Fix the error
+
+for (x < 10; x++) {
+  console.log(x);
+}
+
+for (var x = 5; x < 10; x++) {
+  console.log(x);
+}
+
+// Fix the error 2
+
+for (var k = 0; k < 200; k++) {
+  console.log(k);
+}
+
+// Factorials!
+var solution = 1;
+
+for (var x = 1; x <= 12; x++) {
+  solution *= x;
+}
+
+console.log(solution);
+
+// Find my seat
+
+for (let row = 0; row <= 25; row++) {
+  for (let seat = 0; seat <= 99; seat++) {
+    console.log(`${row}-${seat}`);
+  }
+}
