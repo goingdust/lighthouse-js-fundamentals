@@ -1,6 +1,5 @@
 function howManyHundreds(num) {
-  const divisible = num / 100;
-  return Math.round(divisible);
+  return parseInt(num / 100);
 }
 
 console.log(howManyHundreds(1000), "=?", 10);
