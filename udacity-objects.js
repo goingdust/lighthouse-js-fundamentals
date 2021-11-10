@@ -81,12 +81,7 @@ const facebookProfile = {
   addFriend: function incrementFriendCount() {
     facebookProfile.friends += 1;
   },
-  removeFriend: function decrementFriendCount() {
-    facebookProfile.friends -= 1;
-  }
-};
-
-// Donuts revisited
+  removeFriend: fund line app (brought to you by the lovely folks at NodeSchool) is not installed on your VM. To insta
 
 var donuts = [
   { type: "Jelly", cost: 1.22 },
@@ -98,5 +93,3 @@ var donuts = [
 donuts.forEach(function(donut) {
   console.log(`${donut.type} donuts cost $${donut.cost} each`);
 });
-
-console.log(donutMessage);
