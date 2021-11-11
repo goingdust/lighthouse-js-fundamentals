@@ -6,7 +6,7 @@ const vegetables = [
   },
   {
     submitter: 'Sally Tomato-Grower',
-    redness: 20,
+    redness: 2,
     plumpness: 8
   },
   {
@@ -18,20 +18,16 @@ const vegetables = [
 const metric = 'redness';
 
 function judgeVegetable(vegetables, metric) {
-  const firstVeg = vegetables[0];
-  const firstMetric = firstVeg[metric];
+  let highestScore = 0;
+  let submitter = '';
   
   for (let i = 0; i < vegetables.length; i++) {
-    const comparisonVeg = vegetables[i];
-    const comparisonMetric = comparisonVeg[metric];
-    
-    if (firstMetric > comparisonMetric) {
-      return;
-    }
-    if (comparisonMetric > firstMetric) {
-      return;
+    if (highestScore < vegetables[i][metric]) {
+      highestScore = vegetables[i][metric];
+      submitter = vegetables[i].submitter;
     }
   }
+  return submitter;
 }
 
 console.log(judgeVegetable(vegetables, metric));
@@ -48,4 +44,9 @@ console.log(judgeVegetable(vegetables, metric));
       return firstVeg.submitter;
     }
   }
+
+
+vegetables.sort(function (a, b) {
+    return a[metric] - b[metric];
+  });
 */
