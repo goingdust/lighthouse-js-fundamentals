@@ -32,6 +32,9 @@ function judgeVegetable(vegetables, metric) {
 
 console.log(judgeVegetable(vegetables, metric));
 
+
+// other failed attempts to solve this!
+
 /*
   const firstVeg = vegetables[0];
   const firstMetric = firstVeg[metric];
@@ -45,8 +48,7 @@ console.log(judgeVegetable(vegetables, metric));
     }
   }
 
-
-vegetables.sort(function (a, b) {
+  vegetables.sort(function (a, b) {
     return a[metric] - b[metric];
   });
 */
